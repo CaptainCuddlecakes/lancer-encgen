@@ -15,7 +15,7 @@ function generateAndShow(e) {
         console.log(npcGroup);
         let $npcDiv = $('#outputZone').append($template);
 
-        $npcDiv.find('.lreg-npcCount').text(count + 'x');
+        $npcDiv.find('.lreg-npcCount').text(count);
         $npcDiv.find('.lreg-npcName').text(name);
 
 
