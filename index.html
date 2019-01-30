@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LANCER random encounter generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/encounter-generator.js"></script>
+    <script type="text/javascript" src="/iface.js"></script>
+    <div class="container my-3 py-0 card card-body bg-light">
+        <div class="row my-3 px-3">
+            <h1>LANCER Random Encounter Generator <small class="text-muted">by Ari</small></h1> 
+            This tool will randomly generate arrangements of NPCs that you can fight in LANCER mech combat.
+        </div>
+        <div class="row my-3 px-3">
+        <form>
+            <div class="row my-2">
+                <div class="col">
+                    <label for="licenseLevel">Player license level</label>
+                    <input type="number" class="form-control" id="licenseLevel" value="0" min="0" max="12">
+                </div>
+                <div class="col">
+                    <label for="playerCount">Player count</label>
+                    <input type="number" class="form-control" id="playerCount" value="1" min="1">
+                </div>
+            </div>
+            <button type="submit" id="generateButton" class="btn btn-primary">Generate</button>
+        </form>
+        </div>
+        <div class="my-3 mx-0 card card-body bg-dark d-inline-flex flex-row flex-wrap" id="outputZone">
+        
+        </div>
+    </div>
+</body>
+
+<template id="npcTemplate">
+    <div class="card-group m-1">
+        <div class="card p-2 bg-secondary font-weight-bold text-light lreg-npcCount" style="flex: initial;">2x</div>
+        <div class="card p-2 font-weight-bold lreg-npcName" style="flex: initial;">REGULAR SCOURER</div>
+    </div>
+</template>
+
+</html>
