@@ -8,12 +8,15 @@ function generateAndShow(e) {
     var $template = $('#npcTemplate').html();
     $('#outputZone').empty();
 
-    for (let npcGroup of results) {
 
+
+    for (let npcGroup of results) {
         let [count, name] = npcGroup;
 
-        console.log(npcGroup);
-        let $npcDiv = $('#outputZone').append($template);
+
+        let $npcDiv = $($template);
+
+        $('#outputZone').append($npcDiv);
 
         $npcDiv.find('.lreg-npcCount').text(count + 'x');
         $npcDiv.find('.lreg-npcName').text(name);
