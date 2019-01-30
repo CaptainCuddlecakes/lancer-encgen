@@ -42,8 +42,8 @@ var baseClasses = [
 ];
 
 var difficultyTemplates = [
-    ['grunt', 0.25, 10],
-    ['basic', 1, 5], // no template
+    ['grunt', 0.25, 6],
+    ['basic', 1, 3], // no template
     ['elite', 1, 2],
     ['ultra', 4, 1]
 ];
