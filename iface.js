@@ -11,7 +11,8 @@ function generateAndShow(e) {
 
 
     for (let npcGroup of results) {
-        let [count, name] = npcGroup;
+        let [count, name, base] = npcGroup;
+		console.log(base);
 
 
         let $npcDiv = $($template);
@@ -20,6 +21,7 @@ function generateAndShow(e) {
 
         $npcDiv.find('.lreg-npcCount').text(count + 'x');
         $npcDiv.find('.lreg-npcName').text(name);
+        $npcDiv.find('.lreg-bases').text(base);
 
 
     }

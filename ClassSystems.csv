@@ -1,0 +1,27 @@
+Index,Class,Basic1,Basic2,Basic3,Option1,Option2,Option3,Option4,Option5
+1,Ace,SSC Corpro Flight System,Missile Launcher,-,Bombing Bay,Strafing Module,Burst/Dash Module,Chaff Launchers,Attitude Thrusters
+2,Aegis,Light Laser,Defense Net,-,Adaptive Shielding,Ring of Fire,Hardlight Cover System,EM Shielding,HA Blackwall System
+3,Assassin,Kai Bioplating,Variable Knife,Pulse Rifle,Boltok Rifle,Spinning Kick,Shroud Module,Explosive Knives,Tracker Missiles
+4,Assault,Heavy Assault Rifle,Combat Knife,-,Underslung Grenade Launcher,Micro-missile Barrage,High Impact Rounds,Auto-targeting,Rank Discipline
+5,Barricade,Cycle Lance,Mobile Printer,Shock Plating,Drag Drone,Seismic Repulsor,Rapid Extruder,Mag Mines,Snare Drone
+6,Bastion,Rotary Grenade Launcher,Heavy Assault Shield,-,Shard Launcher,Shieldwall,Immortality,Defender,Hypo-reinforcement Servos
+7,Berserker,Chain Axe,Volcanic Re-route,-,Molten Shield,Harpoon,Calamity Module,Nail Gun,Hunter Jets
+8,Bombard,Bombard Cannon,Stabilizers,Molded Armor,H.A. Siege Shield,High-Impact Shells,LMG,Cluster-seeker Bombs,Devastator Protocol
+9,Breacher,Dual Shotguns,BREACH Ram,-,Unload,Loaded for Bear,Hunter Lock,Thermal Charge,Hi Caliber Slugs
+10,Cataphract,Ram Cannon,Impact Thrusters,-,Rotary Barrels,Lance Shot,High-speed Targeting,Point-defense Shield,Capacitor Discharge
+11,Demolisher,Demolisher Hammer,Kinetic Compensation,-,Broad-sweep Haft,Concussion Missiles,Seismic Destroyer,Shatter Module,Knockout Blow
+12,Engineer,Flak Cannon,Deployable Turret,Ablative Shielding,Power Deployer,Arsenal,Skyshield Protocol,Point Defense Drone,Tracking Computer
+13,Hive,Hunter Killer Drone Nexus,Drone Barrage,-,Electro-Nanite Cloud,Grinder Drones,Razor Swarm,Swarm Shield,Seeker Cloud
+14,Hornet,Stinger Pistol,SSC Total Suite,Impale Systems,Evade Suite,Minor Basilisk,Interdictor Suite,HEX Missiles,Drag Javelin
+15,Marker,High Caliber Pistol,Target Marker,-,Orbital Strike,HOUND Missile,Blind,Rebound Scan,Smart Missile Cloud
+16,Operator,Raptor' Plasma Rifle,Nightcloak' Type Omnishield,Self-Erasing,Fade Generator,Refractive Shield,Skirmisher Implant,Nova Missile,Trace Drive
+17,Pyro,Flamethrower,Explosive Vent,-,Insulated Plating,Unshielded Reactor,Napalm Bomb,Rigged Fuel Rod Launcher,Explosive Jet
+18,Rainmaker,Thundershock Missile Pods,Drang' Missile Rack,-,HADES Missile,Rigged Payload,Volley,Huntsman,Atlas Missile
+19,Ronin,Carbon Fiber Sword,Mag Parry,-,Charged Slash,Reflex Implant,Echo Edge,Hyper-Reflex Mode,Extended Blade
+20,Scourer,Thermal Lance,Cooling Module,-,Crystal Lense,Supercharged,Pulse Laser,Flash Lense,Melt
+21,Seeder,Grav Grenade Launcher,Mine Deployer,-,Smart Tagging,Grav Mine,Anti-Infantry Mine,Grav Lash,Seeker Mines
+22,Sentinel,Combat Shotgun,Retractable Sword,Eye of Midnight,Punisher Ammunition,Wrath-lock,Impaler,Watchful,Guardian Protocols
+23,Sniper,Anti-Material Rifle,Auto-pistol,Deathmark Protocol,Defensive Grapple,Climber,Selective Loader,Over-penetrating Round,Flash Bomb
+24,Spectre,Machine Pistol,ATHENA-class Scan,Tactical Cloak,Combat Subroutine,Fortress,System Flayer,Weakness Analyser,Cloaking Field
+25,Support,Suppressive Cannon,Latch Drone,-,Remote Reboot,Nano-repair Cloud,Defensive Pulse,Manual Repair,VULCAN Drone
+26,Technical,Autogun,HORUS Hacker,Snap Fire,Predatory Logic,Puppet System,SCORPION Protocols,Illusory Subroutines,System Link

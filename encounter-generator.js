@@ -12,7 +12,7 @@ function randomInt(min, max) {
 }
   
 
-var baseClasses = [
+let baseClasses = [
     'ace',
     'aegis',
     'assassin',
@@ -41,33 +41,64 @@ var baseClasses = [
     'technical'
 ];
 
-var difficultyTemplates = [
-    ['grunt', 0.25, 6],
-    ['basic', 1, 3], // no template
-    ['elite', 1, 2],
-    ['ultra', 4, 1]
+let difficultyTemplates = [
+    ['grunt', 0.25, 6, 1],
+    ['basic', 1, 3, 2], // no template
+    ['elite', 1, 2, 3],
+    ['ultra', 4, 1, 4]
 ];
+
+
+function parseCSV(text) {
+	let lines = text.trim().split("\r\n");
+	let tokenLines = lines.map(line => line.split(","));
+	let colNames = tokenLines[0];
+	let dataLines = tokenLines.slice(1);
+	let objects = dataLines.map(tokens => {
+		let result = {};
+		for (let [i,value] of tokens.entries())
+			result[colNames[i]] = value;
+		return result;
+	});
+	let result = {};
+	for (let object of objects)
+		result[object["Class"].toLowerCase()] = object;
+	return result;
+}
+
+async function loadCSV() {
+	let response = await fetch("ClassSystems.csv");
+	let text = await response.text();
+	return text;
+}
+
+let classData;
+$(async() => {
+	classData = parseCSV(await loadCSV());
+});
 
 function generateNPC(tier) {
     let npcClass = baseClasses.random();
-    let [difficulty, pointsCost, maxAmount] = difficultyTemplates.random();
+    let [difficulty, pointsCost, maxAmount, optSysCount] = difficultyTemplates.random();
 
-    let outString = ('tier ' + tier + ' ' + difficulty + ' ' + npcClass).toUpperCase();
+    let nameString = ('tier ' + tier + ' ' + difficulty + ' ' + npcClass).toUpperCase();
+	let data = classData[npcClass];
+	let baseString = [data.Basic1, data.Basic2, data.Basic3].filter(s => s != "-").join(";\n");
 
     let amount = randomInt(1, maxAmount);
 
     pointsCost = pointsCost * amount;
 
-    let output = [amount, outString];
+    let output = [amount, nameString, baseString];
     
     return [pointsCost, output];
 }
 
 function generateEncounter(playerCount, partyLevel) {
     // Set tier based on player level: 1 for levels 0-4, 2 for levels 5-8, 3 for levels 9-12
-    var tier = partyLevel < 5 ? 1 : partyLevel < 9 ? 2 : 3;
+    let tier = partyLevel < 5 ? 1 : partyLevel < 9 ? 2 : 3;
 
-    var npcs = [];
+    let npcs = [];
 
     while (playerCount > 0) {
 
